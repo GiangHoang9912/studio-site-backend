@@ -1,0 +1,34 @@
+{
+  "name": "borgert-cms",
+  "description": "CMS desenvolvido utilizando o Framework Laravel",
+  "main": "",
+  "authors": [
+    "Odirlei Borgert <odirleiborgert@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "borgert",
+    "cms",
+    "laravel",
+    "admin"
+  ],
+  "homepage": "https://github.com/odirleiborgert/borgert-cms",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^4.1.2",
+    "font-awesome": "fontawesome#^4.7.0",
+    "metisMenu": "metismenu#^2.7.9",
+    "jquery": "^3.3.1",
+    "blueimp-file-upload": "^9.22.0",
+    "switchery": "^0.8.2",
+    "summernote": "^0.8.10",
+    "datetimepicker": "^2.5.20"
+  }
+}
