@@ -27,7 +27,12 @@ class BlogController extends Controller
         return response()->json(
             [
                 'posts' => $posts,
-                'page' => $page
+                'pagination' => [
+                    'page' => $posts->currentPage(),
+                    'page_size' => $posts->perPage(),
+                    'total' => $posts->total(),
+                    'total_pages' => $posts->lastPage(),
+                ]
             ]
         );
     }

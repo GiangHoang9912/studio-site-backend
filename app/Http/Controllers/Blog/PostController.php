@@ -35,6 +35,10 @@ class PostController extends Controller
             );
         }
 
-        return view('blog.empty');
+        return response()->json(
+            [
+                'post' => []
+            ]
+        );;
     }
 }

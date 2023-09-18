@@ -42,6 +42,8 @@ Route::group(['prefix' => 'api', 'as' => 'api.'], function () {
     Route::get('/categorie/{title}/{id}', ['as' => 'categorie', 'uses' => 'Blog\CategorieController@index_api'])->where('id', '[0-9]+');
     Route::get('/search', ['as' => 'search', 'uses' => 'Blog\SearchController@index_api']);
     Route::get('/sitemap.xml', ['as' => 'sitemap', 'uses' => 'Blog\SitemapController@index_api']);
+    Route::get('/kols', ['as' => 'kols', 'uses' => 'Blog\KolsController@index_api']);
+    Route::get('/recruitments', ['as' => 'recruitments', 'uses' => 'Blog\RecruitmentController@index_api']);
 });
 
 // ---------------------------------------------------------------------------------------------

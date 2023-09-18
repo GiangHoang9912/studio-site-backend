@@ -32,7 +32,12 @@ class SearchController extends Controller
             [
                 'posts' => $posts,
                 'term' => $term,
-                'page' => $page
+                'pagination' => [
+                    'page' => $posts->currentPage(),
+                    'page_size' => $posts->perPage(),
+                    'total' => $posts->total(),
+                    'total_pages' => $posts->lastPage(),
+                ],
             ]
         );
     }
